@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 app = Flask(__name__)
 load_dotenv()
-CORS(app)
+CORS(app, origins=["https://vercel.com/zenaguimanes-tech/ecommerce-frontend/B3oLEzAei8FgTDWjprwS83CCFzgj"])
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
